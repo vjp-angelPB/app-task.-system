@@ -1,0 +1,120 @@
+/* calendarStyles.css */
+
+/* Color del calendario */
+.rbc-calendar {
+    background-color: white;
+}
+
+/* Barra (donde aparece el nombre del mes) */
+.rbc-toolbar {
+    background-color: #5eb1eb; 
+    color: white; 
+}
+
+/* Botones de la barra superior */
+.rbc-btn-group {
+    background-color: #5eb1eb;
+    color: white;
+    margin: 3px;
+}
+
+/* Estilo de border radius para todos los botones */
+.rbc-btn-group button {
+    margin: 10px;
+    border-radius: 8%; 
+}
+
+/* Estilo de border radius para todos los botones de la barra */
+.rbc-toolbar button {
+    background-image: none;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    border-radius: 8%; 
+}
+
+/* Añado border-radius para el botón de Back */
+.rbc-btn-group > button:not(:first-child):not(:last-child) {
+    border-radius: 8%;
+}
+
+/* Comento 2 líneas y añado border-radius para el botón de Month */
+.rbc-btn-group > button:last-child:not(:first-child) {
+    /* border-top-left-radius: 0; */
+    /* border-bottom-left-radius: 0; */
+    border-radius: 8%; 
+}
+
+/* Comento 2 líneas y añado border-radius para el botón de Day */
+.rbc-btn-group > button:first-child:not(:last-child) {
+    /* border-top-right-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+    border-radius: 8%;
+}
+
+
+/* Estilo para el día actual */
+.rbc-today {
+    background-color: #d3d3d3; 
+}
+
+/* Estilo para los demás meses */
+.rbc-off-range {
+    background-color: #82b0f4; 
+    color: white; 
+}
+
+/* Estilo para el hover de los días */
+.rbc-day-slot:hover {
+    background-color: #afd6e3; 
+}
+
+
+/* Comento la siguiente línea para que no tenga box-shadow inset y se vea mejor el botón */
+.rbc-toolbar button.rbc-active {
+    background-image: none;
+    /* box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); */
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+/* Código CSS para hacer que las tareas se escalen y se hagan más grandes cuando pases por encima de ellas*/
+/*
+.rbc-event {transition: .2s ease-in-out 0s;}
+
+.rbc-event:hover {cursor: pointer;
+    transform: scale(1.25); }
+*/
+
+
+/* Estilos para dispositivos con un ancho máximo de 1000px */
+@media (max-width: 1000px) {
+  .desktop {
+    display: none !important;
+  }
+  .text{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+button.test-btn {
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    display: block;
+    margin: 50px auto;
+    background: transparent;
+    transition: .2s ease-in-out 0s;
+}
+
+button.test-btn:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    background: #FFF;
+    color: #000;
+}
+
+
+
+

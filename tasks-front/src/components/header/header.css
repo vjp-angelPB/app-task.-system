@@ -1,0 +1,92 @@
+*{
+  font-family: 'Poppins', Courier, monospace;
+}
+.buttonAdd {
+  transition: 0.3s;
+}
+.buttonAdd:hover {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {
+  .custom-button {
+    margin-right: 20px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .custom-nav {
+    align-items: center !important;
+  }
+  .custom-button {
+    margin-top: 10px !important;
+    width: 30% !important; 
+  }
+}
+
+.userLogged {
+  margin: 7px;
+  color: white;
+  transition: text-decoration 0.3s;
+  text-decoration: none;
+}
+.userLogged:hover {
+  cursor: pointer;
+  text-decoration: underline; 
+}
+
+
+#dropdown-basic {
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+}
+
+.bell-icon {
+  background-color: transparent;
+  border: none;
+}
+
+.notification-panel {
+  position: absolute;
+  border-radius: 10px;
+  top: 60px;
+  right: 6px;
+  background-color: white;
+  height: 400px;
+  width: 365px;
+  z-index: 1000;
+  box-shadow: 1px 1px 10px 0px rgb(0 0 0);
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+}
+
+.notification-panel h4 {
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.notification-panel ul{
+  padding: 0; 
+}
+
+.notification-panel li {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  box-shadow: 1px 1px 3px 0px rgb(0 0 0);
+  word-wrap: break-word; 
+}
+
+.notification-title {
+  margin-top: 10px !important; 
+}
+
+.notification-panel li Button {
+  margin-top: 10px !important;
+}

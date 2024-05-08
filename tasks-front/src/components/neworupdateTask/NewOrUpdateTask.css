@@ -1,0 +1,24 @@
+/* styles.css */
+
+/* Para pantallas mayores a 768px */
+.custom-input  {
+  width: 90%;
+}
+
+/* Para pantallas menores o iguales a 768px */
+@media (max-width: 768px) {
+  .custom-input {
+    width: 80%;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+    align-items: flex-start; /* Alinear los elementos a la izquierda */
+    margin-top: 0.5rem;
+  }
+
+  .custom-input-container {
+    display: block;
+  }
+}
